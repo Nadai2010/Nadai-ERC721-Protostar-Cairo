@@ -6,6 +6,8 @@ El tutorial a realizar es una guía de como instalar Protostar, la usaremos para
 
 El contrato [ERC721Custom](https://github.com/omarespejel/starknet-erc721-testing.git) nos permite acuñar animales con características como alas, patas y sexo.
 
+-----------------------------
+ 
 ## Resumen del tutorial
 Consiste en instalar Protostar, una herramienta que administra sus dependencias, compila su proyecto y ejecuta pruebas. 
 
@@ -15,6 +17,8 @@ Consiste en instalar Protostar, una herramienta que administra sus dependencias,
 
 Usaremos el ERC721 importado para hacer el deploy en testnet, crear nuestro primer NFT de la colección con las carateristicas de estos animales que veremos en el tutorial. También nos servirá de práctica para los ejercicios [ERC721 Starknet-edu](https://github.com/starknet-edu/starknet-erc721.git) que luego en el contrato evaluador podremos añadir el address del contrato que estuvimos trabajando. Y de esta forma obtener puntos y seguir avanzando.
 
+---------------------
+
 ## Requisitos
 
 - buen conocimiento de [Python](https://www.python.org/)
@@ -22,6 +26,8 @@ Usaremos el ERC721 importado para hacer el deploy en testnet, crear nuestro prim
 - conocimientos básicos de [Cairo and StarkNet](https://www.cairo-lang.org/docs/index.html)
 - conocimientos básicos de [mypy](https://mypy.readthedocs.io/en/stable/getting_started.html)
  
+-----------------------
+
 ## Instalación
 
 Primero instalaremos `curl` y el repositorio que trae las herramientas. Copie y ejecute en una terminal los siguientes comandos
@@ -46,16 +52,16 @@ protostar -v
 ```
 Saldrá un mensaje de versión actualizado similar a este:
 
-Protostar version: 0.4.2                                                                            
-Cairo-lang version: ^0.10.0                                                                          
-21:38:49 [INFO] Execution time: 3.43 s                                                               
+Protostar version: 0.4.2                                                                                                                                
+Cairo-lang version: ^0.10.0                                                                                                                               
+21:38:49 [INFO] Execution time: 3.43 s                                                                                                             
 
 Para actualizar Protostar, ejecute:
 
 ```bash
 protostar upgrade
 ```
-----
+------------------
 
 ## Inicialización del proyecto
 
@@ -84,10 +90,12 @@ protostar init --existing.
 
 El resultado de la ejecución protostar inites un archivo de configuración protostar.toml, archivos de ejemplo y los siguientes 3 directorios:
 
-src— Un directorio para su código.
-lib— Un directorio predeterminado para dependencias externas.
-tests— Un directorio que almacena pruebas.
-protostar.toml— Un archivo principal que guardara rutas, e información principal.
+* src— Un directorio para su código.
+* lib— Un directorio predeterminado para dependencias externas.
+* tests— Un directorio que almacena pruebas.
+* protostar.toml— Un archivo principal que guardara rutas, e información principal.
+
+------------------------
 
 ## Configuración para crear ERC721
 
@@ -105,6 +113,7 @@ Nos deberia de imprimir una pantalla similar a esta
 21:24:40 [INFO] Installed successfully
 21:24:40 [INFO] Execution time: 6.70 s
 ```
+----------------------------------------
 
 ### Build al contrato
 
@@ -120,6 +129,7 @@ Imprimirá algo similar a esto
 18:26:24 [INFO] Built the project successfully                                                           
 18:26:24 [INFO] Execution time: 24.21 s
 ```
+------------------------------------------
 
 ### Convertir string a int
 
@@ -142,6 +152,8 @@ func main{output_ptr: felt*}() {
 ```
 
 ![Graph](Playground.png)
+
+---------------------------------------
 
 ## Realizar el deploy en tesnet Goerli
 
@@ -167,7 +179,9 @@ protostar deploy ./build/ERC721_custom.json --network alpha-goerli -i 3361024412
 
 Listo ya realizo el deploy de su contrato de [ERC721Custom](https://goerli.voyager.online/contract/0x034dc30bb1aac030dca1e13be37728087bb49be818efb5ca7deb0aab26732e96#readContract). Ahora desde él podremos crear nuestro primer NFT.
 
-## Mint primer NFT
+---------------------------------
+
+## Ahora vamos a Mint nuestro primer NFT
 
 En el contrato deployado, vamos a write smart y en el punto uno `declare_animal` especificamos los valores `1,2,1`
 
