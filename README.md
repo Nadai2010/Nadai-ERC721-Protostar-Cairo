@@ -69,7 +69,7 @@ Primero clonamos la repo
 
 ```bash
 gh repo clone Nadai2010/Nadai-ERC721-Protostar-Cairo
-cd starknet-erc721-protostar
+cd Nadai-ERC721-Protostar-Cairo
 ```
 
 Para crear un nuevo proyecto ejecute:
