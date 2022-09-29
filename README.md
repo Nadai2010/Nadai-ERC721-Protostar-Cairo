@@ -4,7 +4,7 @@ El tutorial a realizar es una guía de como instalar Protostar, la usaremos para
 
 [ERC721](https://github.com/omarespejel/starknet-erc721-testing.git)
 
-El contrato [ERC721Custom](https://github.com/omarespejel/starknet-erc721-testing.git)nos permite acuñar animales con características como alas, patas y sexo.
+El contrato [ERC721Custom](https://github.com/omarespejel/starknet-erc721-testing.git) nos permite acuñar animales con características como alas, patas y sexo.
 
 ## Resumen del tutorial
 Consiste en instalar Protostar, una herramienta que administra sus dependencias, compila su proyecto y ejecuta pruebas. 
