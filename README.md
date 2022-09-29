@@ -65,6 +65,13 @@ protostar upgrade
 
 ## Inicialización del proyecto
 
+Primero clonamos la repo
+
+```bash
+gh repo clone Nadai2010/Nadai-ERC721-Protostar-Cairo
+cd starknet-erc721-protostar
+```
+
 Para crear un nuevo proyecto ejecute:
 
 ```bash
