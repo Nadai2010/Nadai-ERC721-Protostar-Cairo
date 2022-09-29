@@ -140,7 +140,7 @@ func main{output_ptr: felt*}() {
     return ();
 }
 ```
-Ejemplo
+
 ![Graph](Playground.png)
 
 ## Realizar el deploy en tesnet Goerli
@@ -171,7 +171,7 @@ Listo ya realizo el deploy de su contrato de [ERC721Custom](https://goerli.voyag
 
 En el contrato deployado, vamos a write smart y en el punto uno `declare_animal` especificamos los valores `1,2,1`
 
-[Graph](declareanimal.png)
+![Graph](declareanimal.png)
 
 ¡¡¡FELICIDADES!!!Si todo ha ido bien, su primer NFT ha debido de ser deployado en este caso [NFI](https://goerli.voyager.online/tx/0x5f4400220df5eb23eea343ccaef04d396ee7368095f7a021f6608ae23027249#overview)
 Podrá verlo en su wallet Argent X, en la parte collectibles y abrirlos con [MINTSQUARE](https://mintsquare.io/asset/starknet-testnet/0x034dc30bb1aac030dca1e13be37728087bb49be818efb5ca7deb0aab26732e96/1) o con [ASPECT](https://testnet.aspect.co/asset/0x034dc30bb1aac030dca1e13be37728087bb49be818efb5ca7deb0aab26732e96/1)
