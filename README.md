@@ -165,7 +165,7 @@ func main{output_ptr: felt*}() {
 ## Realizar el deploy en tesnet Goerli
 
 Para realizar el deploy del ERC721 necesitamos pasarle parámetros nombre, símbolo, y un address.
-El address en el caso de querer hacer los ejercicios de [ERC721 Starknet-edu](https://github.com/starknet-edu/starknet-erc721.git)tiene que añadir la del contrato evaluador que es `x2d15a378e131b0a9dc323d0eae882bfe8ecc59de0eb206266ca236f823e0a15`. En esta prueba hemos añadido nuestra Smart Wallet de Argent X
+El address en el caso de querer hacer los ejercicios de [ERC721 Starknet-edu](https://github.com/starknet-edu/starknet-erc721.git)tiene que añadir la del contrato evaluador que es `0x2d15a378e131b0a9dc323d0eae882bfe8ecc59de0eb206266ca236f823e0a15`. En esta prueba hemos añadido nuestra Smart Wallet de Argent X
 
 Para el nombre y el simbolo debemos convertir los string en int. Si queremos hacer el deploy del ERC721 con los Oficiales sería
 
